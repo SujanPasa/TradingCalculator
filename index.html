@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trading Calculatro</title>
+</head>
+<body>
+    
+    <nav class="name"><h2>Trading Calculator</h2></nav> 
+    <div class="container">
+         
+        <main class="main-container">
+            
+            <div class="calculator-wrapper">
+                <div class="calculator" id="qty-calculator">
+                    <h2 class="type-name">Quantity Calculator</h2>
+                    <label for="amount-available">Amount Available</label><br>
+                    <input type="number" name="amount-available" id="amount-available" placeholder="Amount available"> <br>
+                    <label for="price">Price Per Share</label><br>
+                    <input type="number" name="price" id="price" placeholder="Price of share"><br>
+                    <label for="buy-quantity">Buyable Quantitly</label><br>
+                    <div class="output" id="buy-quantity"></div>
+                    <button id="qty-calulator-btn">Calculate</button>
+                </div>
+            </div>
+
+            <div class="calculator-wrapper">
+                <div class="calculator" id="percentage-calculator">
+                    <h2 class="type-name">Percentage Calculator</h2>
+                    <label for="amount">Amount</label><br>
+                    <input type="number" name="amount" id="amount" placeholder="Amount"><br>
+                    <label for="percentage">Percentage</label> <br>
+                    <input type="number" name="percentage" id="percentage" placeholder="Percentage"> <br>
+                    <label for="percentage-calculated">Percentage Calculated</label> <br>
+                    <div id="percentage-calculated" class="output"></div>
+                    <button id="percentage-calulator-btn">Calculate</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
